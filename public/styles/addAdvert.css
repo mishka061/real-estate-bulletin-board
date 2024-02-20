@@ -1,0 +1,755 @@
+h3 {
+  padding-top: 20px;
+  font-size: 23px;
+  border-top: 1px dotted rgba(221, 221, 221, 0.808);
+  font-weight: bold;
+}
+
+.addAdvertNew {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="radio"].dealCountNumber + label,
+input[type="radio"].dealNumber + label,
+input[type="radio"].parking-Materials + label,
+input[type="radio"].studia + label,
+input[type="radio"].sell-button + label,
+input[type="radio"].apartments-type + label,
+input[type="radio"].rent-apartments-type + label,
+input[type="radio"].status-type + label,
+.submit {
+  height: auto;
+  overflow-wrap: break-word;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid #ccc;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.rentConstruction input,
+.yearConstruction input {
+  border-radius: 10px;
+  width: 100px;
+  height: 35px;
+  margin: 0 10px;
+}
+
+input[type="radio"].parking-Materials + label {
+  padding: 5px;
+  height: auto;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+}
+
+input[type="radio"].studia + label {
+  padding: 0 10px;
+  height: 30px;
+  border-radius: 20px;
+}
+input[type="radio"].dealCountNumber + label,
+input[type="radio"].dealNumber + label {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+input[type="radio"].apartments-type + label,
+input[type="radio"].rent-apartments-type + label {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+input[type="radio"].status-type + label {
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.type-announcement-block img {
+  width: 50px;
+  margin-top: 25px;
+  margin-left: 45px;
+}
+input[type="radio"].sell-button + label {
+  width: 160px;
+  height: 130px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+input[type="radio"]#radio72:checked + label,
+input[type="radio"]#radio21:checked + label,
+input[type="radio"].studia:checked + label,
+input[type="radio"].sell-button:checked + label,
+input[type="radio"].parking-Materials:checked + label,
+input[type="radio"].status-type:checked + label,
+input[type="radio"].apartments-type:checked + label,
+input[type="radio"].rent-apartments-type:checked + label {
+  background-color: rgba(5, 92, 255, 0.842);
+  color: white;
+}
+
+input[type="radio"].dealCountNumber:checked + label,
+input[type="radio"].dealNumber:checked + label {
+  background-color: rgba(5, 92, 255, 0.842);
+  color: white;
+}
+
+input[type="radio"].dealCountNumber:hover + label,
+input[type="radio"].dealNumber:hover + label,
+input[type="radio"]#radio72:hover + label,
+input[type="radio"]#radio21:hover + label,
+input[type="radio"].status-type:hover + label,
+input[type="radio"].studia:hover + label,
+input[type="radio"].sell-button:hover + label,
+input[type="radio"].parking-Materials:hover + label,
+input[type="radio"].apartments-type:hover + label,
+input[type="radio"].rent-apartments-type:hover + label {
+  background-color: #dbdbdba6;
+}
+
+input[type="radio"].dealCountNumber,
+input[type="radio"].studia,
+input[type="radio"].parking-Materials,
+input[type="radio"].status-type,
+input[type="radio"].apartments-type,
+input[type="radio"].dealNumber,
+input[type="radio"].rent-apartments-type,
+input[type="radio"].sell-button {
+  display: none;
+}
+
+input[type="radio"]#radio72 + label {
+  background-color: #fff;
+  width: 270px;
+}
+
+input[type="radio"]#radio21 + label {
+  background-color: #fff;
+  width: 300px;
+}
+
+.rent-info-house {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.rentConstruction {
+  display: flex;
+  flex-direction: row;
+}
+
+.submit {
+  width: 100%;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid rgb(0, 0, 0);
+}
+.submitBtn {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.submit:hover {
+  background-color: rgba(99, 99, 99, 0.842);
+  color: #fff;
+}
+.studia {
+  font-size: 16px;
+}
+.types-announcement {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.type-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.type-announcement-block label {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.yearConstruction {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.type-parking {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.content-parking {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.map p {
+  margin-bottom: 0;
+}
+#map {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.radioBtnHouse {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.createInput {
+  width: 100px;
+  margin-left: 5px;
+}
+
+.createRoomNumber {
+  padding-left: 170px;
+}
+.type-apartments {
+  display: flex;
+  flex-direction: row;
+}
+.createInput input,
+#houseCountRoom input {
+  border-radius: 10px;
+  width: 100%;
+  height: 35px;
+}
+.divCreateInput,
+#houseCountRoom {
+  display: flex;
+  flex-direction: row;
+}
+.createInput div,
+#houseCountRoom div {
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  margin: 5px;
+}
+.type-Layout,
+.titlePhoto {
+  padding-top: 10px;
+}
+.fileInput {
+  display: none;
+}
+
+.fileInputStyle {
+  width: 200px;
+  padding: 0 10px;
+  height: 130px;
+  margin: 0 10px 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px dashed gray;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.fileInputStyle:hover {
+  background-color: #dbdbdba6;
+}
+.fileInputStyle img {
+  margin-top: 20px;
+  margin-left: 60px;
+  width: 60px;
+}
+
+.fileInputPhoto {
+  width: 100%;
+  height: 130px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px dashed gray;
+}
+.filePhotoContent {
+  width: 50%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#photoContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+}
+.opasityDivImg {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.425);
+}
+.opasityDivImg:hover {
+  background-color: #dbdbdba6;
+  opacity: 0.5;
+  border-radius: 8px;
+}
+.opasityDivImg img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  overflow-wrap: break-word;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.918);
+  border-radius: 50%;
+  padding: 0 10px;
+  display: none;
+  z-index: 1;
+}
+
+.opasityDivImg:hover .delete-icon {
+  display: block;
+}
+
+.textareaDetails {
+  width: 100%;
+  padding-left: 10px;
+}
+.textareaPrice {
+  width: 100%;
+  padding: 2px;
+}
+.tooltip-toggle img {
+  width: 14px;
+  height: 14px;
+  margin-bottom: 2px;
+}
+
+.tooltip-toggle {
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+}
+#depositContent {
+  display: flex;
+  flex-direction: column;
+}
+.inputCommission,
+.inputDeposit {
+  border-radius: 10px;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  font-weight: 400;
+  text-transform: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 256px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.tooltip-toggle:hover .tooltip-text,
+.tooltip-toggle:focus .tooltip-text {
+  display: block;
+}
+.type-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, auto));
+}
+
+.details-block img {
+  height: 40px;
+  margin: 10px;
+}
+
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+.details-block {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  margin: 10px;
+}
+
+.details-block input[type="checkbox"].sell-details-button {
+  display: none;
+}
+
+.details-block label {
+  display: block;
+}
+
+.details-block input[type="checkbox"].sell-details-button:checked + label {
+  background-color: rgba(5, 92, 255, 0.842);
+  color: #fff;
+  border-radius: 10px;
+}
+.details-block input[type="checkbox"].sell-details-button:hover + label {
+  background-color: #dbdbdba6;
+
+  border-radius: 10px;
+}
+.roomsInDeal p,
+.pSpan,
+.rent-info-house p,
+.Square p,
+.fileInputPhoto,
+.yearConstruction p,
+.title-parking p,
+.type-apartments p {
+  font-size: 18px;
+  font-weight: bold;
+}
+#houseCountRoom p,
+input[type="radio"].dealCountNumber + label,
+input[type="radio"].dealNumber + label,
+.rentCreateInput select,
+.createInput p,
+.Free-sale,
+.details-block,
+input[type="radio"].studia + label,
+input[type="radio"].sell-button + label,
+input[type="radio"].apartments-type + label,
+input[type="radio"].rent-apartments-type + label,
+input[type="radio"].status-type + label,
+input[type="radio"].parking-Materials + label,
+.submit,
+.type-Layout,
+.titlePhoto,
+.divTextareaDetails p {
+  font-size: 17px;
+}
+
+.yearConstruction p,
+
+.type-apartments p {
+  width: 170px;
+  overflow-wrap: break-word;
+}
+.Free-sale {
+  display: flex;
+}
+
+input[type="radio"].parking-Materials + label {
+  width: 190px;
+  margin-bottom: 5px;
+}
+
+.type-Materials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+
+}
+.Materials {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 20px 0;
+  margin-top: 10px;
+}
+
+.MaterialsRoomsHouse {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.type-Materials input {
+  width: 90%;
+}
+
+.type-Materials button {
+  width: 80%;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .addAdvertNew {
+    width: 70%;
+  
+  }
+  h3 {
+    font-size: 23px;
+  }
+  .createInput div,
+  #houseCountRoom div {
+    width: 95px;
+    height: 60px;
+  }
+
+  .yearConstruction input {
+    width: 95px;
+    height: 34px;
+  }
+  input[type="radio"].sell-button + label {
+    width: 145px;
+    height: 125px;
+    margin: 0 10px 10px 0;
+  }
+  .type-announcement-block img {
+    width: 45px;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  #map {
+    height: 400px;
+  }
+  .roomsInDeal p,
+  #houseCountRoom p,
+  .pSpan,
+  .rent-info-house p,
+  .Square p,
+  .fileInputPhoto,
+  .yearConstruction p,
+  .title-parking p,
+  .type-apartments p {
+    font-size: 18px;
+    overflow-wrap: break-word;
+  }
+  input[type="radio"].dealCountNumber + label,
+  input[type="radio"].dealNumber + label,
+  .rentCreateInput select,
+  .createInput p,
+  .Free-sale,
+  .details-block,
+  input[type="radio"].studia + label,
+  input[type="radio"].sell-button + label,
+  input[type="radio"].parking-Materials + label,
+  input[type="radio"].apartments-type + label,
+  input[type="radio"].rent-apartments-type + label,
+  input[type="radio"].status-type + label,
+  .submit,
+  .type-Layout,
+  .titlePhoto,
+  .divTextareaDetails p {
+    font-size: 16px;
+  }
+
+  .createRoomNumber {
+    padding-left: 0px;
+  }
+  .fileInputStyle {
+    width: 180px;
+    height: 120px;
+  }
+
+  .fileInputStyle img {
+    margin-left: 50px;
+    width: 50px;
+  }
+  input[type="radio"].parking-Materials + label,
+  input[type="radio"].sell-button + label {
+    padding: 8px;
+    margin-bottom: 5px;
+  }
+  .createInput {
+    width: 90px;
+  }
+
+  .details-block {
+    margin: 8px;
+  }
+
+  input[type="radio"].parking-Materials + label {
+    width: 180px;
+  }
+
+  .type-Materials {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, auto));
+  }
+  .title-parking {
+    width: 140px;
+  }
+  .Materials {
+    padding: 18px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .addAdvertNew {
+    width: 80%;
+  
+  }
+  h3 {
+    font-size: 22px;
+  
+  }
+  .createInput div,
+  #houseCountRoom div {
+    width: 85px;
+    height: 55px;
+
+    text-align: start;
+  }
+  .MaterialsRoomsHouse {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .yearConstruction input {
+    width: 90px;
+    height: 30px;
+  }
+  input[type="radio"].sell-button + label {
+    width: 135px;
+    height: 115px;
+    margin: 0 7px 7px 0;
+  }
+  .type-announcement-block img {
+    width: 35px;
+    margin-top: 15px;
+    margin-left: 35px;
+  }
+  #map {
+    height: 300px;
+  }
+  .roomsInDeal p,
+  #houseCountRoom p,
+  .pSpan,
+  .Square p,
+  .fileInputPhoto,
+  .rent-info-house p,
+  .yearConstruction p,
+  .title-parking p,
+  .type-apartments p {
+    
+    font-size: 17px;
+ 
+  }
+
+  .rentCreateInput select,
+  .createInput p,
+  .Free-sale,
+  .details-block,
+  input[type="radio"].studia + label,
+  input[type="radio"].sell-button + label,
+  input[type="radio"].parking-Materials + label,
+  input[type="radio"].apartments-type + label,
+  input[type="radio"].dealCountNumber + label,
+  input[type="radio"].dealNumber + label,
+  input[type="radio"].rent-apartments-type + label,
+  input[type="radio"].status-type + label,
+  .submit,
+  .type-Layout,
+  .titlePhoto,
+  .divTextareaDetails p {
+    font-size: 15px;
+  }
+
+  input[type="radio"].status-type + label {
+    width: 50%;
+    margin-top: 5px;
+  }
+
+  input[type="radio"].status-type + label {
+    width: 70%;
+    margin-top: 5px;
+  }
+
+  .divCreateInput,
+  #houseCountRoom {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .roomsInDeal p,
+  #houseCountRoom p,
+  .yearConstruction p,
+  .title-parking p,
+  .type-apartments p {
+    width: 140px;
+  }
+
+  .type-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, auto));
+  }
+
+  .delete-icon {
+    font-size: 16px;
+  }
+
+  .fileInputStyle {
+    height: 110px;
+  }
+
+  .fileInputStyle img {
+    margin-left: 50px;
+    width: 40px;
+  }
+  input[type="radio"].parking-Materials + label,
+  input[type="radio"].sell-button + label {
+    padding: 7px;
+    margin-bottom: 4px;
+  }
+
+  .Free-sale {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .details-block {
+    margin: 6px;
+  }
+  input[type="radio"].parking-Materials + label {
+    width: 170px;
+  }
+
+  .title-parking {
+    width: 100%;
+  }
+  .type-Materials {
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  .title-parking p {
+    text-align: center;
+
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  .Materials {
+    padding: 17px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .pSpan {
+    text-align: center;
+  }
+}
+

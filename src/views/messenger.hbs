@@ -1,0 +1,67 @@
+{{#if tokenIsPresent}}
+<div class="messengerConteiner">
+    <div class="messengerDiv1">
+        <div class="nameRound">
+            <div>
+                {{name.[0]}}
+            </div>
+        </div>
+        <div class="nameContent">
+            {{name}} {{surname}}
+        </div>
+        <div>
+        </div>
+    </div>
+    {{#if messengerArr}}
+    <div class="messengerDiv2">
+        <h1>Сообщения</h1>
+        {{#each messengerArr}}
+        {{#each info.user}}
+        <form action="" method="post">
+            <div class="contentMessengerArr">
+                <div class="messengerCheckbox">
+                    <input type="checkbox" name="recordId" id="{{recordId}}" class="messengerBtnCheckbox"
+                        value="{{recordId}}">
+                    <label for="{{recordId}}"></label>
+                </div>
+                <div class="messageImage">
+                    <img src="/{{../realty.firstImage}}" class="img-fluid" />
+                    <div class="absoluteImg">
+                        <div class="nameRound1">
+                            <div>
+                                {{senderName.[0]}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dateAndName">
+                    <div class="contentMessages" data-id="{{recordId}}">
+                        <div>
+                            <h4>
+                                {{senderName}} {{senderSurname}}
+                            </h4>
+                        </div>
+                        <div>
+                            <p>{{../realty.sellButton}} • {{../realty.typeOfProperty}} • {{../realty.price}} ₽
+                            </p>
+                        </div>
+                    </div>
+                    <div class="deleteMessenger">
+                        <div>
+                            {{date.day}}
+                        </div>
+                        <input type="submit" name="submit" value="Удалить чат">
+                    </div>
+                </div>
+            </div>
+        </form>
+        {{/each}}
+        {{/each}}
+    </div>
+    {{else}}
+    <h1>У Вас пока нет сообщений</h1>
+    {{/if}}
+</div>
+{{else}}
+no messenger
+{{/if}}

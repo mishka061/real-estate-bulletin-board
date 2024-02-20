@@ -1,0 +1,114 @@
+<div id="home-content">
+    <div class="container-fluid">
+        <div class="header-content">
+            <div class="image-search">
+                <img src="/bedroom.jpg" alt="">
+            </div>
+            <div class="header-search">
+                <h1>Недвижимость</h1>
+            </div>
+            <div class="search-conteiner">
+                    <form action="" method="POST">
+                        <div class="rent-rooms">
+                            <input type="radio" name="sellButton" id="sellButton31" class="rentBtnrooms" value="Купить">
+                            <label for="sellButton31">Купить</label>
+                            <input type="radio" name="sellButton" id="sellButton32" class="rentBtnrooms"
+                                value="Снять длительно">
+                            <label for="sellButton32">Снять длительно</label>
+                            <input type="radio" name="sellButton" id="sellButton33" class="rentBtnrooms"
+                                value="Снять посуточно">
+                            <label for="sellButton33">Снять посуточно</label>
+                        </div>
+                        <div class="link-content">
+                            <div class="rooms-select">
+                                <select name="typeOfProperty">
+                                    <option value="Квартира" class="options">Квартира</option>
+                                    <option value="Комната" class="options">Комната</option>
+                                    <option value="Дом" class="options">Дом</option>
+                                </select>
+                            </div>
+                            <div class="price-label">
+                                <div class="label-title">
+                                    <p>
+                                        Комнат
+                                    </p>
+                                </div>
+                                <div class="label-btn-rooms">
+                                    <input type="radio" name="searchNumberOfRooms" id="labelBtn1" class="label-type"
+                                        value="1">
+                                    <label for="labelBtn1">1</label>
+                                    <input type="radio" name="searchNumberOfRooms" id="labelBtn2" class="label-type"
+                                        value="2">
+                                    <label for="labelBtn2">2</label>
+                                    <input type="radio" name="searchNumberOfRooms" id="labelBtn3" class="label-type"
+                                        value="3">
+                                    <label for="labelBtn3">3</label>
+                                    <input type="radio" name="searchNumberOfRooms" id="labelBtn4" class="label-type"
+                                        value="4">
+                                    <label for="labelBtn4">4</label>
+                                    <input type="radio" name="searchNumberOfRooms" id="labelBtn5"
+                                        class="label-type-studia" value="Студия">
+                                    <label for="labelBtn5">Студия</label>
+                                </div>
+                            </div>
+                            <div class="price-rooms">
+                                <input type="text" name="searchPriceMin" placeholder=" Цена от" class="searchPriceMin">
+                                <input type="text" name="searchPriceMax" placeholder=" Цена до " class="searchPriceMax">
+                            </div>
+                            <div class="address-rooms">
+                                <input type="text" name="searchAdress" placeholder="Город">
+                            </div>
+                        </div>
+                        <div class="submit-rooms">
+                            <input type="submit" name="submit" value="Показать">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="homeContainerArr">
+            {{#if apartmentsArr}}
+            {{#each apartmentsArr}}
+            <div class="apartmentsConteiners" data-id="{{_id}}">
+                <input type="hidden" name="{{userId}}">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        {{#each images}}
+                        <div class="swiper-slide img-fluid">
+                            <img src="/{{this}}" class="img-fluid" />
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="titleApartmentsConteiner">
+                    <div class="sellButtonTitle">
+                        <p>{{sellButton}}</p>
+                        <p>{{typeOfProperty}}</p>
+                    </div>
+                    <div class="priceTitle">
+                        <div>
+                            <p>{{price}}</p>
+
+                            <p>₽</p>
+                        </div>
+                        <div>
+                            <a href="/apartaments/{{_id}}">читать дальше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+            {{else}}
+            <div id="homeNocontent">
+                <h3>
+                    Не найдено ни одного объявления
+                </h3>
+            </div>
+            {{/if}}
+        </div>
+        <div class="pagination"></div>
+    </div>
+</div>

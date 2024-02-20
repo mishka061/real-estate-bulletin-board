@@ -1,0 +1,160 @@
+.profileContainerArr {
+  margin-top: 100px;
+  width: 80%;
+  
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+}
+
+.profileContainerId {
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.profileContainerId img {
+  width: 100%;
+}
+.profileBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.profileBtn button {
+  margin-top: 10px;
+  width: 140px;
+  font-size: 16px;
+
+  overflow-wrap: break-word;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.profileBtn a{
+  text-decoration: none;
+  color: #000;
+}
+.editBtn {
+  border: 2px solid #6ab5fc;
+  background-color: #92caffa6;
+}
+.editBtn:hover {
+  background-color: #6ab5fc;
+}
+
+.delleteBtn {
+  border: 2px solid rgb(247, 40, 40);
+  background-color: rgb(255, 128, 128);
+}
+.delleteBtn:hover {
+  background-color: rgb(247, 40, 40);
+}
+.titleApartmentsProfileConteiner {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.priceProfileTitle {
+  display: flex;
+  flex-direction: row;
+}
+.sellProfileTitle p,
+.priceProfileTitle p {
+  font-size: 18px;
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+.writeToSeller {
+  width: 98%;
+  background-color: #6ab5fc;
+  border-radius: 10px;
+  margin: 1%;
+  padding: 5px;
+  border: 2px solid blue;
+}
+.writeToSeller a{
+  text-decoration: none;
+  color: #000;
+}
+.writeToSeller:hover {
+  background-color: rgba(5, 92, 255, 0.842);
+
+}
+.writeToSeller a:hover {
+  color: #fff;
+}
+.divWriteSeller{
+  margin-top: 20px;
+  background-color: #ffffff;
+  
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 112, 198, 0.2);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(0, 112, 198, 0.2);
+  box-shadow: 0px 0px 17px 0px rgba(0, 112, 198, 0.2);
+  border-radius: 10px;
+}
+.messengerTextarea{
+  padding-left: 5px;
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid rgba(92, 162, 255, 0.692);
+}
+
+
+.submitSend {
+  width: 98%;
+  background-color: #6ab5fc;
+  border-radius: 10px;
+  margin: 1%;
+  padding: 5px;
+  border: 2px solid blue;
+}
+
+.submitSend:hover {
+  background-color: rgba(5, 92, 255, 0.842);
+   color: white;
+}
+
+.profileContainerArr1{
+  width: 100%;
+  height: 100vh;
+}
+
+.profileContainerArr1 h2{
+  padding-top: 80px;
+  text-align: center;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .profileBtn button {
+    width: 140px;
+    font-size: 15px;
+  }
+  .sellProfileTitle p,
+  .priceProfileTitle p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .profileBtn button {
+    width: 130px;
+    font-size: 14px;
+  }
+  .sellProfileTitle p,
+  .priceProfileTitle p {
+    font-size: 16px;
+    margin-right: 4px;
+  }
+}

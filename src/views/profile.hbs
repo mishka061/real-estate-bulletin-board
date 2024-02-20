@@ -1,0 +1,46 @@
+{{#if tokenIsPresent}}
+{{#if apartmentsArr}}
+<div class="profileContainerArr">
+    {{#each apartmentsArr}}
+    <div class="profileContainerId" data-id="{{_id}}">
+        <input type="hidden" name="{{userId}}">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                {{#each images}}
+                <div class="swiper-slide img-fluid">
+                    <img src="/{{this}}" class="img-fluid" />
+                </div>
+                {{/each}}
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="titleApartmentsProfileConteiner">
+            <div class="sellProfileTitle">
+                <p>{{sellButton}}</p>
+            </div>
+            <div class="priceProfileTitle">
+                <p>{{typeOfProperty}}</p>
+                <p>{{price}}</p>
+                <p>₽</p>
+            </div>
+        </div>
+        <div class="profileBtn">
+            <button class="editBtn"><a href="/edit/{{_id}}">Редактировать</a></button>
+            <button class="delleteBtn"><a href="/delete/{{_id}}">Удалить</a></button>
+        </div>
+    </div>
+    {{/each}}
+</div>
+<div class="pagination"></div>
+{{else}}
+<div class="profileContainerArr1">
+    <h2>
+        Вы не добавили ни одного объявления
+    </h2>
+</div>
+{{/if}}
+{{else}}
+no profile
+{{/if}}

@@ -1,0 +1,491 @@
+{{#if tokenIsPresent}}
+<form action="" method="post" enctype="multipart/form-data">
+    <div class="editPageContent">
+        <h4>Редактировать объявление</h4>
+        <input type="hidden" name="{{userId}}">
+        <input type="hidden" name="{{id}}">
+        <div class="editTitleConteiner">
+            <div class="editTitle">
+                <select name="typeOfProperty" id="">
+                    <option value="">{{apartamentOne.typeOfProperty}}</option>
+                    <option value="Квартира">Квартира</option>
+                    <option value="Комната">Комната</option>
+                    <option value="Дом">Дом</option>
+                </select>
+            </div>
+            <div class="editTitle">
+                <select name="sellButton" id="">
+                    <option value="">{{apartamentOne.sellButton}}</option>
+                    <option value="Купить">Купить</option>
+                    <option value="Сдать длительно">Сдать длительно</option>
+                    <option value="Сдать посуточно">Сдать посуточно</option>
+                </select>
+            </div>
+        </div>
+        <div class="editConteiner">
+            <p>
+                Адрес
+            </p>
+            <input type="text" name="address" value="{{apartamentOne.address}}">
+        </div>
+        <div class="containerEdit">
+            {{#if apartamentOne.infoHouse.yearConstruction}}
+            <div class="editConteiner">
+                <p>
+                    Год постройки
+                </p>
+                <input type="text" name="infoHouse[yearConstruction]"
+                    value="{{apartamentOne.infoHouse.yearConstruction}} ">
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoHouse.ceilingHeight}}
+            <div class="editConteiner">
+                <p>
+                    Высота потолков
+                </p>
+                <input type="text" name="infoHouse[ceilingHeight]" value="{{apartamentOne.infoHouse.ceilingHeight}}">
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoHouse.typeOfHouse}}
+            <div class="editConteiner">
+                <p>
+                    Тип дома
+                </p>
+                <select name="infoHouse[typeOfHouse]" id="">
+                    <option value="">{{apartamentOne.infoHouse.typeOfHouse}}</option>
+                    <option value="Кирпич">Кирпич</option>
+                    <option value="Монолит">Монолит</option>
+                    <option value="Панель">Панель</option>
+                    <option value="Кирпич-монолит">Кирпич-монолит</option>
+                    <option value="Блок">Блок</option>
+                </select>
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.plotArea}}
+            <div class="editConteiner">
+                <p>
+                    Площадь участка
+                </p>
+                <input type="text" name="infoApartments[plotArea]" value="{{apartamentOne.infoApartments.plotArea}}">
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.squareApartment}}
+            <div class="editConteiner">
+                <p>
+                    Общая площадь
+                </p>
+                <input type="text" name="infoApartments[squareApartment]"
+                    value="{{apartamentOne.infoApartments.squareApartment}}">
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.Residential}}
+            <div class="editConteiner">
+                <p>
+                    Жилая площадь
+                </p>
+                <input type="text" name="infoApartments[Residential]"
+                    value="{{ apartamentOne.infoApartments.Residential}}">
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.Kitchen}}
+            <div class="editConteiner">
+                <p>
+                    Кухя
+                </p>
+                <input type="text" name="infoApartments[Kitchen]" value="{{ apartamentOne.infoApartments.Kitchen}}">
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.squareApartmentDeal}}
+            <div class="editConteiner">
+                <p>
+                    Общая площадь
+                </p>
+                <input type="text" name="infoApartments[squareApartmentDeal]"
+                    value="{{apartamentOne.infoApartments.squareApartmentDeal}}">
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.ResidentialDeal}}
+            <div class="editConteiner">
+                <p>
+                    Жилая площадь
+                </p>
+                <input type="text" name="infoApartments[ResidentialDeal]"
+                    value="{{ apartamentOne.infoApartments.ResidentialDeal}}">
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.KitchenDeal}}
+            <div class="editConteiner">
+                <p>
+                    Кухя
+                </p>
+                <input type="text" name="infoApartments[KitchenDeal]"
+                    value="{{ apartamentOne.infoApartments.KitchenDeal}}">
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.ground-floor}}
+            <div class="editConteiner">
+                <p>
+                    Этаж
+                </p>
+                <div class="editFloor">
+                    <input type="text" name="infoApartments[ground-floor]"
+                        value="{{apartamentOne.infoApartments.ground-floor}}">
+                    из
+                    <input type="text" name="infoApartments[last-floor]"
+                        value="{{apartamentOne.infoApartments.last-floor}}">
+                </div>
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoHouse.typeOfParking}}
+            <div class="editConteiner">
+                <p>
+                    Парковка
+                </p>
+                <select name="infoHouse[typeOfParking]" id="">
+                    <option value="">{{apartamentOne.infoHouse.typeOfParking}}</option>
+                    <option value="Открытая">Открытая</option>
+                    <option value="Закрытая">Закрытая</option>
+                    <option value="Подземная">Подземная</option>
+                </select>
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.Windows}}
+            <div class="editConteiner">
+                <p>
+                    Окна
+                </p>
+                <select name="infoApartments[Windows]" id="">
+                    <option value="">{{apartamentOne.infoApartments.Windows}}</option>
+                    <option value="Во двор">Во двор</option>
+                    <option value="На улицу">На улицу</option>
+                </select>
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.Bathroom}}
+            <div class="editConteiner">
+                <p>
+                    Санузел
+                </p>
+                <select name="infoApartments[Bathroom]" id="">
+                    <option value="">{{apartamentOne.infoApartments.Bathroom}}</option>
+                    <option value="Совмещенный">Совмещенный</option>
+                    <option value="Раздельный">Раздельный</option>
+                    <option value="Более одного">Более одного</option>
+                    <option value="В доме">В доме</option>
+                    <option value="На улице">На улице</option>
+                    <option value="Отсутствует">Отсутствует</option>
+                </select>
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.Balcony}}
+            <div class="editConteiner">
+                <p>
+                    Балкон
+                </p>
+                <select name="infoApartments[Balcony]" id="">
+                    <option value=""> {{apartamentOne.infoApartments.Balcony}}</option>
+                    <option value="Балкон">Балкон</option>
+                    <option value="Лоджия">Лоджия</option>
+                    <option value="Без балкона">Без балкона</option>
+                </select>
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.Repair}}
+            <div class="editConteiner">
+                <p>
+                    Ремонт
+                </p>
+                <select name="infoApartments[Repair]" id="">
+                    <option value="">{{apartamentOne.infoApartments.Repair}}</option>
+                    <option value="Косметический">Косметический</option>
+                    <option value="Евро">Евро</option>
+                    <option value="Дизайнерский">Дизайнерский</option>
+                    <option value="Требуется">Требуется</option>
+                </select>
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.typeOfPlot}}
+            <div class="editConteiner">
+                <p>
+                    участок
+                </p>
+                <select name="infoApartments[typeOfPlot]" id="">
+                    <option value="">{{ apartamentOne.infoApartments.typeOfPlot}}</option>
+                    <option value="ИЖС">ИЖС</option>
+                    <option value="Садовый">Садовый</option>
+                    <option value="Фермерский">Фермерский</option>
+                </select>
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.squareHouse}}
+            <div class="editConteiner">
+                <p>
+                    площадь, м²
+                </p>
+                <input type="number" name="infoApartments[squareHouse]"
+                    value="{{ apartamentOne.infoApartments.squareHouse}}">
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.numberOfFloors}}
+            <div class="editConteiner">
+                <p>
+                    этажей
+                </p>
+                <input type="number" name="infoApartments[numberOfFloors]"
+                    value="{{ apartamentOne.infoApartments.numberOfFloors}}">
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.Material}}
+            <div class="editConteiner">
+                <p>
+                    Материал
+                </p>
+                <select name="infoApartments[Material]" id="">
+                    <option value="">{{apartamentOne.infoApartments.Material}}</option>
+                    <option value="Кирпичный">Кирпичный</option>
+                    <option value="Монолитный">Монолитный</option>
+                    <option value="Панельный">Панельный</option>
+                    <option value="Блочный">Блочный</option>
+                    <option value="Деревянный">Деревянный</option>
+                </select>
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.Shower}}
+            <div class="editConteiner">
+                <p>
+                    Душ
+                </p>
+                <select name="infoApartments[Shower]" id="">
+                    <option value="">{{apartamentOne.infoApartments.Shower}}</option>
+                    <option value="В доме">В доме</option>
+                    <option value="На улице">На улице</option>
+                    <option value="Отсутствует">Отсутствует</option>
+                </select>
+            </div>
+            {{/if}}
+            {{#if apartamentOne.infoApartments.statusType}}
+            <div class="editConteiner">
+                <p>
+                    Тип дома
+                </p>
+                <select name="infoApartments[statusType]" id="">
+                    <option value="">{{apartamentOne.infoApartments.statusType}}</option>
+                    <option value="Аппартаменты">Аппартаменты</option>
+                    <option value="Жилой фонд">Жилой фонд</option>
+                    <option value="Отдельный дом">Отдельный дом</option>
+                    <option value="Часть дома">Часть дома</option>
+                    <option value="Таунхаус">Таунхаус</option>
+                    <option value="Дуплекс">Дуплекс</option>
+                </select>
+            </div>
+            {{/if}}
+        </div>
+
+        <div class="editTitleConteiner">
+            <div class="editConteiner">
+                <p>Добавить планировку</p>
+                <div class="fileEditStyle">
+                    <input type="file" name="imgLabelEdit[]" id="fileInput" class="fileEdit" multiple>
+                </div>
+            </div>
+            <div class="editConteiner">
+                <p>Добавить фотографии</p>
+                <div id="fileEditStyle">
+                    <input type="file" name="imageEdit[]" id="filePhoto" class="filePhotoEdit" multiple>
+                </div>
+            </div>
+        </div>
+        <div class="editConteiner">
+            <p>
+                Описание
+            </p>
+            <div>
+                <textarea name="textDetail" class="editTextarea">{{apartamentOne.textDetail}}</textarea>
+            </div>
+        </div>
+        {{#if (isArray apartamentOne.amenitiesAndDetails.details)}}
+        <div class="editConteiner">
+            <p>
+                Детали
+            </p>
+            <div class="editDetailBlock">
+                <div class="edit-block">
+                    <input type="radio" name="amenitiesAndDetails[details]" id="details1" class="editBtn"
+                        value="Интернет">
+                    <label for="details1">Интернет</label>
+                </div>
+                <div class="edit-block">
+                    <input type="radio" name="amenitiesAndDetails[details]" id="details2" class="editBtn"
+                        value="Холодильник">
+                    <label for="details2">Холодильник</label>
+                </div>
+                <div class="edit-block">
+                    <input type="radio" name="amenitiesAndDetails[details]" id="details3" class="editBtn"
+                        value="Мебель на кухне">
+                    <label for="details3">Мебель на кухне</label>
+                </div>
+                <div class="edit-block">
+                    <input type="radio" name="amenitiesAndDetails[details]" id="details4" class="editBtn"
+                        value="Кондиционер">
+                    <label for="details4">Кондиционер</label>
+                </div>
+                <div class="edit-block">
+                    <input type="radio" name="amenitiesAndDetails[details]" id="details5" class="editBtn"
+                        value="Мебель в квартире">
+                    <label for="details5">Мебель в квартире</label>
+                </div>
+                <div class="edit-block">
+                    <input type="radio" name="amenitiesAndDetails[details]" id="details6" class="editBtn" value="Лифт">
+                    <label for="details6">Лифт</label>
+                </div>
+                <div class="edit-block">
+                    <input type="radio" name="amenitiesAndDetails[details]" id="details7" class="editBtn"
+                        value="Мусоропровод">
+                    <label for="details7">Мусоропровод</label>
+                </div>
+                <div class="edit-block">
+                    <input type="radio" name="amenitiesAndDetails[details]" id="details8" class="editBtn"
+                        value="Консьерж">
+                    <label for="details8">Консьерж</label>
+                </div>
+                <div class="edit-block">
+                    <input type="radio" name="amenitiesAndDetails[details]" id="details9" class="editBtn"
+                        value="Закрытая территория">
+                    <label for="details9">Закрытая территория</label>
+                </div>
+                <div class="edit-block">
+                    <input type="radio" name="amenitiesAndDetails[details]" id="details11" class="editBtn"
+                        value="Стиральная машина">
+                    <label for="details11">Стиральная машина</label>
+                </div>
+                <div class="edit-block">
+                    <input type="radio" name="amenitiesAndDetails[details]" id="details13" class="editBtn"
+                        value="Посудомойка">
+                    <label for="details13">Посудомойка</label>
+                </div>
+                <div class="edit-block">
+                    <input type="radio" name="amenitiesAndDetails[details]" id="details16" class="editBtn"
+                        value="Можно с животными">
+                    <label for="details16">Можно с животными</label>
+                </div>
+                <div class="edit-block">
+                    <input type="radio" name="amenitiesAndDetails[details]" id="details17" class="editBtn"
+                        value="Можно с детьми">
+                    <label for="details17">Можно с детьми</label>
+                </div>
+                <div class="edit-block">
+                    <input type="radio" name="amenitiesAndDetails[details]" id="details22" class="editBtn"
+                        value="Телевизор">
+                    <label for="details22">Телевизор</label>
+                </div>
+            </div>
+        </div>
+        {{/if}}
+        <div class="editConteiner">
+            <p>
+                Цена ₽
+            </p>
+            <input type="text" name="price" value="{{apartamentOne.price}}" class="editInputPrice">
+            <button class="btnXEdit"><img src="/854821.png" alt=""></button>
+        </div>
+        {{#if apartamentOne.amenitiesAndDetails.Deposit}}
+        <div class="editConteiner">
+            <p>
+                Залог ₽
+            </p>
+            <div class="editDepositBtn">
+                <div>
+                    <input type="text" name="amenitiesAndDetails[Deposit]" class="depositEditInput"
+                        value="{{ apartamentOne.amenitiesAndDetails.Deposit}}">
+                </div>
+                <div>
+                    <button class="btnDepositEdit0">0%</button>
+                </div>
+                <div>
+                    <button class="btnDepositEdit50">50%</button>
+                </div>
+                <div>
+                    <button class="btnDepositEdit100">100%</button>
+                </div>
+            </div>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.amenitiesAndDetails.agentCommission}}
+        <div class="editConteiner">
+            <p>
+                Комиссия агента ₽
+            </p>
+            <div class="editDepositBtn">
+                <div>
+                    <input type="text" name="amenitiesAndDetails[agentCommission]" class="commissionEditInput"
+                        value="{{apartamentOne.amenitiesAndDetails.agentCommission}}">
+                </div>
+                <div>
+                    <button class="btnComissionEdit0">0%</button>
+                </div>
+                <div>
+                    <button class="btnComissionEdit50">50%</button>
+                </div>
+                <div>
+                    <button class="btnComissionEdit100">100%</button>
+                </div>
+            </div>
+        </div>
+        {{/if}}
+        <div class="editConteiner">
+            {{#if amenitiesAndDetails.amenitiesAndDetails.transactionType}}
+            <div class="conteinerEdit">
+                <p>
+                    Продажа
+                </p>
+                <select name="amenitiesAndDetails[transactionType]" id="">
+                    <option value="">{{apartamentOne.amenitiesAndDetails.transactionType}}</option>
+                    <option value="Свободная">Свободная</option>
+                    <option value="Альтернатива">Альтернатива</option>
+                    <option value="Переуступка">Переуступка</option>
+                </select>
+            </div>
+            {{/if}}
+            {{#if apartamentOne.amenitiesAndDetails.additionally}}
+            <div class="conteinerEdit">
+                <p>
+                </p>
+                <select name="amenitiesAndDetails[additionally]" id="">
+                    <option value="">{{ apartamentOne.amenitiesAndDetails.additionally}}</option>
+                    <option value="Возможен торг">Возможен торг</option>
+                    <option value="Ипотека">Ипотека</option>
+                </select>
+            </div>
+            {{/if}}
+            {{#if apartamentOne.amenitiesAndDetails.Bidding}}
+            <div class="conteinerEdit">
+                <p>
+                    Торг
+                </p>
+                <select name="amenitiesAndDetails[Bidding]" id="">
+                    <option value="">{{ apartamentOne.amenitiesAndDetails.Bidding}}</option>
+                    <option value="Возможен">Возможен</option>
+                    <option value="Нет">Нет</option>
+                </select>
+            </div>
+            {{/if}}
+            {{#if apartamentOne.amenitiesAndDetails.Utility-bills}}
+            <div class="conteinerEdit">
+                <p>
+                    Коммунальные платежи
+                </p>
+                <select name="amenitiesAndDetails[Utility-bills]" id="">
+                    <option value="">{{ apartamentOne.amenitiesAndDetails.Utility-bills}}</option>
+                    <option value="Только счетчики">Только счетчики</option>
+                    <option value="Вся квитанция">Вся квитанция</option>
+                    <option value="Включены в стоимость">Включены в стоимость</option>
+                </select>
+            </div>
+            {{/if}}
+        </div>
+        <input type="submit" name="submit" value="Редактировать" id="btnEdit">
+    </div>
+</form>
+{{else}}
+no edit
+{{/if}}

@@ -1,0 +1,483 @@
+.messengerConteiner {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+}
+.messengerDiv1 {
+  margin-right: 20px;
+  padding-left: 10px;
+}
+
+.messengerDiv2 h1 {
+  margin-left: 10px;
+  padding-bottom: 30px;
+}
+
+.nameRound {
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  background-color: #9900b8;
+  position: relative;
+  margin-bottom: 10px;
+}
+.nameRound div {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  height: 80%;
+  left: 28px;
+  top: -7px;
+}
+.nameContent {
+  font-weight: bold;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid gainsboro;
+}
+
+.messengerCheckbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 20px;
+}
+
+.contentMessengerArr {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 8px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 8px 2px rgba(34, 60, 80, 0.2);
+  border-radius: 20px;
+ margin-top: 15px;
+  padding: 20px;
+}
+.contentMessengerArr:hover {
+  border-radius: 20px;
+  background-color: #f3f3f3;
+}
+.nameRound1 {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #5600b8;
+  position: relative;
+  margin: 0 10px;
+}
+.nameRound1 div {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  height: 80%;
+  left: 7px;
+  top: 1px;
+}
+
+.nameRound5 div,
+.nameRound4 div,
+.nameContent {
+  font-size: 28px;
+}
+
+.nameRound div {
+  font-size: 80px;
+}
+
+.messengerDiv2 h1 {
+  font-size: 35px;
+}
+
+.writeAMessage,
+.recipientMessenger1 p,
+.recipientMessenger2 p,
+.senderMessenger1 p,
+.senderMessenger2 p,
+.nameRound1 div,
+.contentMessages h4 {
+  font-size: 18px;
+}
+p {
+  font-size: 16px;
+}
+.messengerGrey,
+.deleteMessenger input {
+  font-size: 14px;
+}
+
+.contentMessages {
+  padding-left: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+.contentMessages p {
+  margin-bottom: 0;
+}
+.contentMessages h4 {
+  margin-bottom: 3px;
+  color: #000000;
+  font-weight: bold;
+}
+.deleteMessenger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.deleteMessenger input {
+  border-radius: 10px;
+  background-color: rgb(255, 164, 164);
+  border: 2px solid red;
+}
+.deleteMessenger input:hover {
+  background-color: rgb(248, 4, 4);
+  color: white;
+}
+.messageImage {
+  position: relative;
+}
+.absoluteImg {
+  position: absolute;
+  top: -10px;
+  left: -20px;
+}
+.messageImage img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+.messengerGrey {
+  color: rgb(167, 167, 167);
+}
+.channelImg img {
+  width: 30px;
+}
+
+.channelImg {
+  margin-right: 20px;
+}
+.contentChannel {
+  display: flex;
+  flex-direction: row;
+}
+
+.messagesContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.correspondence {
+  overflow-y: auto;
+  margin-top: 20px;
+  height: 600px;
+  background-color: #f8f8f886;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(34, 60, 80, 0.18) inset;
+  -moz-box-shadow: 0px 0px 12px 0px rgba(34, 60, 80, 0.18) inset;
+  box-shadow: 0px 0px 12px 0px rgba(34, 60, 80, 0.18) inset;
+}
+
+.senderContent {
+  padding: 10px;
+}
+
+.recipientContent {
+  padding: 10px;
+}
+
+.nameRound4 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #5600b8;
+  position: relative;
+}
+.nameRound4 div {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  left: 11px;
+  top: 0px;
+}
+.nameRound5 {
+  margin-right: 0;
+  margin-left: auto;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #9900b8;
+  position: relative;
+}
+.nameRound5 div {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  left: 11px;
+  top: 0px;
+}
+.contentApartamentOne1 {
+  margin: 10px 0px;
+  width: 80%;
+  padding: 10px;
+}
+.senderMessengerThis {
+  display: flex;
+  flex-direction: row;
+}
+.senderMessenger1 {
+  background-color: #f0ebe3;
+  margin-left: 40px;
+  margin-right: 10px;
+  width: 500px;
+  height: auto;
+  border-radius: 0 15px 15px 15px;
+  padding: 10px;
+  overflow-wrap: break-word;
+}
+.senderMessenger2 {
+  height: auto;
+  display: flex;
+  align-items: end;
+}
+.senderMessenger2 p {
+  margin-bottom: 0;
+  text-align: end;
+}
+.todayHours {
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+.contentApartamentOne2 {
+  margin-right: 0;
+  margin-left: auto;
+  width: 80%;
+  padding: 10px;
+}
+.recipientMessengerThis {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.recipientMessenger1 {
+  background-color: #cdf3ff;
+  margin-right: 40px;
+  margin-left: 10px;
+  width: 500px;
+  height: auto;
+  border-radius: 15px 0 15px 15px;
+  padding: 10px;
+  overflow-wrap: break-word;
+}
+.recipientMessenger2 {
+  height: auto;
+  display: flex;
+  align-items: end;
+}
+.recipientMessenger2 p {
+  margin-bottom: 0;
+  text-align: end;
+}
+
+textarea.writeAMessage {
+  width: 100%;
+  height: auto;
+  overflow-y: hidden; 
+  resize: none;
+  border: none;
+  padding: 10px;
+}
+
+.writeAMessage:hover {
+  border: 2px solid #6ab5fc;
+  border-radius: 10px;
+}
+.submiMessage {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.arrow {
+  margin: 60px 0;
+  display: flex;
+  flex-direction: row;
+}
+.dateAndName {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.channelImg {
+  cursor: pointer;
+  height: 30px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .senderMessenger1 {
+    width: 400px;
+  }
+
+  .recipientMessenger1 {
+    width: 400px;
+  }
+  .contentMessengerArr {
+    margin: 10px;
+    padding: 15px;
+  }
+  .messageImage img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  .nameRound {
+    width: 90px;
+    height: 90px;
+  }
+  .nameRound div {
+    width: 80%;
+    height: 80%;
+    left: 20px;
+    top: -10px;
+    font-size: 75px;
+  }
+  .nameRound1 {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+  }
+  .nameRound1 div {
+    width: 80%;
+    height: 80%;
+    left: 5px;
+    top: -1px;
+  }
+  .nameRound5 div,
+  .nameRound4 div,
+  .nameContent {
+    font-size: 24px;
+  }
+
+  .messengerDiv2 h1 {
+    font-size: 30px;
+  }
+  .todayHours,
+  .nameRound1 div,
+  .contentMessages h4 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .deleteMessenger input {
+    font-size: 14px;
+  }
+  .submiMessage {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .senderMessenger1 {
+    width: 300px;
+  }
+
+  .recipientMessenger1 {
+    width: 300px;
+  }
+  .contentMessengerArr {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .messageImage img {
+    width: 55px;
+    height: 55px;
+    margin-right: 5px;
+  }
+
+  .nameRound {
+    width: 80px;
+    height: 80px;
+  }
+  .nameRound div {
+    width: 80%;
+    height: 80%;
+    left: 16px;
+    top: -12px;
+    font-size: 70px;
+  }
+
+  .nameRound1 {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+  }
+  .nameRound1 div {
+    width: 80%;
+    height: 80%;
+    left: 5px;
+    top: -1px;
+  }
+  .nameRound5 div,
+  .nameRound4 div,
+  .nameContent {
+    font-size: 26px;
+  }
+
+  .messengerDiv2 h1 {
+    font-size: 28px;
+  }
+  .todayHours,
+  .nameRound1 div,
+  .contentMessages h4 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .deleteMessenger input {
+    font-size: 13px;
+  }
+  .submiMessage {
+    width: 30px;
+    height: 30px;
+  }
+  .contentMessages {
+    padding-left: 20px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .dateAndName {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .deleteMessenger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .deleteMessenger input {
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgb(255, 164, 164);
+    border: 2px solid red;
+  }
+  .deleteMessenger input:hover {
+    background-color: rgb(248, 4, 4);
+    color: white;
+  }
+}

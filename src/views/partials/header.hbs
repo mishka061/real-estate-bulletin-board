@@ -1,0 +1,55 @@
+{{#if tokenIsPresent}}
+<div class="navHeaderContainer">
+    <div class="headerImages">
+        <a href="/"><img src="/1685742577_polinka-top-p-kartinka-doma-vkontakte-48.jpg" alt=""></a>
+        <a href="/">
+            <h2>Недвижимость</h2>
+        </a>
+    </div>
+    <div class="centerContent" style="display: none;">
+        <div class="personalConteiner">
+            <div class="personalContent">
+                {{name.[0]}}
+            </div>
+            <p class="login">
+                {{name}}
+                {{surname}}
+            </p>
+        </div>
+        <div class="personalImg">
+            <img src="/writing-clip.png" alt="">
+            <a href="/profile">
+                Мои объявления
+            </a>
+        </div>
+        <div class="personalImg">
+            <img src="/pochta.png" alt="">
+            <a href="/messenger">
+                Мои письма
+            </a>
+        </div>
+        <div class="personaExit">
+            <button class="btnExit"><a href="/" class="exitToken">Выйти</a></button>
+        </div>
+
+    </div>
+    <div class="navContent">
+        <button class="addBtnHeader"><a href="/addAdvert">Добавить объявление</a></button>
+        <div class="personalAccount">
+            {{name.[0]}}
+        </div>
+    </div>
+</div>
+{{else}}
+<div class="navHeaderContainer">
+    <div class="headerImages">
+        <a href="/"><img src="/1685742577_polinka-top-p-kartinka-doma-vkontakte-48.jpg" alt=""></a>
+        <a href="/">
+            <h2>Недвижимость</h2>
+        </a>
+    </div>
+    <div class="navContent">
+        <button class="registrBtnHeader"><a href="/registration">Регистрация</a></button>
+    </div>
+</div>
+{{/if}}

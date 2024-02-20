@@ -1,0 +1,466 @@
+* {
+  font-family: Roboto;
+}
+
+#home-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+
+}
+#homeNocontent{
+  height: 100vh;
+}
+.header-content {
+  width: 100%;
+  position: relative;
+}
+.image-search img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.header-search {
+  position: absolute;
+  top: 15%;
+  left: 40%;
+}
+
+.header-search h1 {
+  font-weight: bold;
+  font-size: 45px;
+  text-shadow: 5px 5px 3px rgba(12, 12, 12, 0.671);
+  color: rgba(255, 255, 255, 0.87);
+}
+input[type="radio"].label-type + label,
+input[type="radio"].label-type-studia + label,
+input[type="radio"].rentBtnrooms + label,
+.priceTitle p,
+.sellButtonTitle p,
+.submit-rooms,
+.rooms-select select,
+.rent-rooms a,
+.label-title p,
+.price-rooms,
+.address-rooms {
+  font-size: 18px;
+
+}
+
+.rent-rooms {
+  position: absolute;
+  top: -65px;
+  left: 0px;
+}
+input[type="radio"].rentBtnrooms {
+  display: none;
+}
+input[type="radio"].rentBtnrooms + label {
+  border-radius: 10px;
+  padding: 5px 20px;
+  border: none;
+
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+input[type="radio"].rentBtnrooms + label:hover {
+  background-color: #d8d7d7;
+}
+input[type="radio"].rentBtnrooms:checked + label {
+  background-color: rgba(5, 92, 255, 0.842);
+  color: white;
+}
+
+.search-conteiner {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  top: 50%;
+  margin: 0 10px;
+  width: 98%;
+}
+
+.link-content {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1.5fr 0.8fr;
+  width: 100%;
+ 
+}
+
+.rooms-select {
+  border-right: 1px solid rgb(221, 221, 221);
+  margin-right: 10px;
+  padding-right: 10px;
+}
+.label-title {
+  width: 30%;
+}
+
+.rooms-select select {
+  height: 30px;
+  width: 100%;
+  border: 1px solid rgba(5, 92, 255, 0.842);
+  border-radius: 5px;
+}
+.price-label {
+  display: flex;
+  flex-direction: row;
+}
+.label-btn-rooms {
+  border-right: 1px solid rgb(221, 221, 221);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+input[type="radio"].label-type + label,
+input[type="radio"].label-type-studia + label {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgba(5, 92, 255, 0.842);
+  padding: 2px 10px;
+  background-color: #ffffff;
+  margin: 0 3px;
+}
+
+input[type="radio"].label-type-studia:checked + label,
+input[type="radio"].label-type:checked + label {
+  background-color: rgba(5, 92, 255, 0.842);
+  color: white;
+}
+input[type="radio"].label-type-studia:hover + label,
+input[type="radio"].label-type:hover + label {
+  background-color: rgb(221, 221, 221);
+  color: blue;
+}
+.price-rooms {
+  display: flex;
+  flex-direction: row;
+ 
+  border-right: 1px solid rgb(221, 221, 221);
+  width: 100%;
+  padding-right: 10px;
+}
+.price-rooms input {
+  width: 50%;
+  margin-left: 5px;
+  height: 30px;
+  border: 1px solid rgba(5, 92, 255, 0.842);
+  border-radius: 5px;
+}
+.price-rooms input:focus {
+  border: 2px solid rgba(5, 92, 255, 0.842);
+}
+
+.address-rooms input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(5, 92, 255, 0.842);
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.label-type-studia,
+.label-type {
+  display: none;
+}
+
+.submit-rooms input {
+  position: absolute;
+  background-color: #0385ffc4;
+  border-radius: 5px;
+  top: 85px;
+  right: 0;
+  border: none;
+  color: blue;
+}
+
+.submit-rooms input:hover {
+  background-color: #6ab5fc;
+}
+
+.homeContainerArr {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, auto));
+}
+
+.apartmentsConteiners {
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+  transform: scale(0.5);
+}
+
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mySwiper {
+  width: 100%;
+  aspect-ratio: 16/10;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sellButtonTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sellButtonTitle p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.priceTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.priceTitle p {
+  margin-right: 2px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.page-link {
+  border: 2px solid #0385ffc4;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 2px;
+}
+
+.rent-rooms a {
+  text-decoration: none;
+}
+.priceTitle div{
+   display: flex;
+   flex-direction: row;
+}
+.imgNotFound {
+  margin-top: 100px;
+}
+.imgNotFound img {
+  width: 100%;
+}
+.footer {
+  height: 60px;
+  background-color: #92caffa6;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  .address-rooms input {
+    width: 96%;
+    margin-left: 5px;
+  }
+  
+  .header-content {
+    position: relative;
+  }
+  .header-search {
+    top: 3%;
+    left: 30%;
+  }
+  .link-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    width: 100%;
+  }
+  .priceTitle div,
+  input[type="radio"].label-type + label,
+  input[type="radio"].label-type-studia + label,
+  input[type="radio"].rentBtnrooms + label,
+  .priceTitle p,
+  .sellButtonTitle p,
+  .submit-rooms,
+  .rooms-select select,
+  .rent-rooms a,
+  .label-title p,
+  .price-rooms,
+  .address-rooms {
+    font-size: 14px;
+
+  }
+  .rent-rooms {
+    position: absolute;
+    top: -40px;
+    left: 0px;
+  }
+  .header-search h1 {
+    font-size: 30px;
+  }
+  .search-conteiner {
+    padding: 8px;
+    top: 90px;
+    margin: 0 8px;
+    width: 98%;
+
+  }
+  .rent-rooms button {
+    padding: 2px 25px;
+    margin-right: 9px;
+  }
+  .homeContainerArr {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  }
+  .apartmentsConteiners {
+    margin: 9px;
+    padding: 18px;
+  }
+  input[type="radio"].rentBtnrooms + label {
+    padding: 4px 15px;
+    background-color: #ffffff;
+    margin-right: 8px;
+  }
+
+  .price-rooms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-right: 1px solid rgb(221, 221, 221);
+    width: 96%;
+    padding-right: 0;
+    
+  }
+  .price-rooms input {
+    margin-left: 0;
+    margin-right: 5px;
+    width: 48%;
+  }
+  .submit-rooms input {
+    top: 95px;
+    right: 0;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .image-search img {
+    width: 100%;
+    border-radius: 5px;
+    height: 200px;
+  }
+  .header-search {
+    display: none;
+  }
+
+  .link-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, auto));
+  }
+  .rent-rooms button {
+    padding: 2px 25px;
+    margin-right: 9px;
+
+  }
+  .priceTitle div,
+  input[type="radio"].label-type + label,
+  input[type="radio"].label-type-studia + label,
+  input[type="radio"].rentBtnrooms + label,
+  .priceTitle p,
+  .sellButtonTitle p,
+  .submit-rooms,
+  .rooms-select select,
+  .rent-rooms a,
+  .label-title p,
+  .price-rooms,
+  .address-rooms {
+    font-size: 13px;
+  }
+  .rent-rooms {
+    top: -30px;
+    left: 0px;
+  }
+  input[type="radio"].rentBtnrooms + label {
+    padding: 3px 10px;
+
+    background-color: #ffffff;
+    margin-right: 8px;
+  }
+  .search-conteiner {
+    padding: 8px;
+    top: 50px;
+     width: 98%;
+    margin-left: 1%;
+  }
+  .rent-rooms button {
+    padding: 2px 20px;
+    margin-right: 8px;
+  }
+  .homeContainerArr {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  }
+  .apartmentsConteiners {
+    margin: 8px;
+    padding: 17px;
+  }
+  input[type="radio"].label-type + label,
+  input[type="radio"].label-type-studia + label {
+    padding: 2px 8px;
+    height: 25px;
+  }
+  .address-rooms input,
+  .price-rooms input,
+  .rooms-select select {
+    height: 25px;
+  }
+
+  .submit-rooms input {
+    top: 110px;
+    right: 0;
+  }
+
+  .rooms-select,
+  .label-btn-rooms,
+  .price-rooms{
+    border-right: none;
+  }
+
+
+  .price-rooms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 96%;
+    padding-right: 0;
+  }
+  .price-rooms input {
+    margin-left: 0;
+    margin-right: 6px;
+    width: 45%;
+  }
+  .address-rooms input {
+    width: 96%;
+  }
+}

@@ -1,0 +1,77 @@
+{{#if tokenIsPresent}}
+<div class="container-fluid">
+    <div class="addAdvertNew">
+        <form action="/addAdvert" method="POST" enctype="multipart/form-data">
+            <div class="buy-types-announcement">
+                {{> types-announcement}}
+            </div>
+            {{> map}}
+            <div class="rentDom" style="display: none;">
+                {{> rentDom}}
+            </div>
+            <div class="rent-apartament-info-house">
+                {{> rent-apartament-info-house}}
+            </div>
+            <div class="buy-apartament-info-house">
+                {{> buy-apartament-info-house}}
+            </div>
+            <div class="infoRoomsHouse">
+                {{> infoRoomsHouse}}
+            </div>
+            <div class="roomsInDeal" style="display: none;">
+                {{> roomsInDeal}}
+            </div>
+            <div class="rent-apartament-info-apartaments">
+                {{> rent-apartament-info-apartaments}}
+            </div>
+            <div class="buy-apartament-info-apartament">
+                {{> buy-apartament-info-apartament}}
+            </div>
+            <div class="filePhoto">
+                {{> filePhoto}}
+            </div>
+            <div class="divTextareaDetails">
+                <h3>Удобства и подробности</h3>
+                <p>
+                    Расскажите о квартире, инфраструктуре и районе. Укажите пожелания к будущим жильцам. Пожалуйста,
+                    постарайтесь не использовать слова и выражения, которые могут кого-то обидеть.
+                </p>
+                <textarea name="textDetail" class="textareaDetails" rows="3"
+                    placeholder="Опишите недвижимость"></textarea>
+            </div>
+            <div class="buy-amenitiesAndDetails">
+                {{> buy-amenitiesAndDetails}}
+            </div>
+            <div class="rent-amenitiesAndDetails" style="display: none;">
+                {{> rent-amenitiesAndDetails}}
+            </div>
+            <div class="dom-amenitiesAndDetails" style="display: none;">
+                {{> dom-amenitiesAndDetails}}
+            </div>
+            <div class="input-container">
+                <h3>Цена и условия сделки </h3>
+                <input type="text" name="price" class="textareaDetailsPrice" placeholder="₽">
+                <button class="btnX"><img src="/854821.png" alt=""></button>
+            </div>
+            <div class="commission" style="display: none;">
+                {{> commission}}
+            </div>
+            <div class="sale-price">
+                {{> sale-price}}
+            </div>
+            <div class="price-daily-rental" style="display: none;">
+                {{> price-daily-rental}}
+            </div>
+            <div class="price-monthly-rental" style="display: none;">
+                {{> price-monthly-rental}}
+            </div>
+
+            <div class="submitBtn">
+                <input type="submit" name="submit" value="Сохранить" class="submit">
+            </div>
+        </form>
+    </div>
+</div>
+{{else}}
+no login
+{{/if}}

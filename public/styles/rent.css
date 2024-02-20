@@ -1,0 +1,81 @@
+.inputDeposit-utility-bills {
+  width: 150px;
+  height: 30px;
+}
+.Agent-DailyRental1,
+.Agent-DailyRental2,
+.Agent-DailyRental3,
+.Without-collateral,
+.Deposit50,
+.Deposit100,
+.Agent-commission1,
+.Agent-commission2,
+.Agent-commission3 {
+  height: 40px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.Agent-DailyRental1:hover,
+.Agent-DailyRental2:hover,
+.Agent-DailyRental3:hover,
+.Without-collateral:hover,
+.Deposit50:hover,
+.Deposit100:hover,
+.Agent-commission1:hover,
+.Agent-commission2:hover,
+.Agent-commission3:hover {
+  background-color:  #ccc;
+
+}
+.Agent-DailyRental1:focus,
+.Agent-DailyRental2:focus,
+.Agent-DailyRental3:focus,
+.Without-collateral:focus,
+.Deposit50:focus,
+.Deposit100:focus,
+.Agent-commission1:focus,
+.Agent-commission2:focus,
+.Agent-commission3:focus {
+  background-color: rgba(5, 92, 255, 0.842);
+  color: #fff;
+}
+.input-container {
+  position: relative;
+}
+.textareaDailyRental,
+.textareaSalePrice,
+.textareaDetailsPrice {
+  width: 100%;
+
+  padding-right: 20px;
+}
+.btnXDaily,
+.btnXSale,
+.btnX {
+  position: absolute;
+  top: 80%;
+  right: 5px;
+  transform: translateY(-52%);
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+.btnXDaily img,
+.btnXSale img,
+.btnX img {
+  width: 15px;
+}
+
+
+
+
+
+

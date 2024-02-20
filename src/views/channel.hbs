@@ -1,0 +1,124 @@
+{{#if tokenIsPresent}}
+<div class="messengerConteiner">
+    <div class="messengerDiv1">
+        <div class="nameRound">
+            <div>
+                {{name.[0]}}
+            </div>
+        </div>
+        <div class="nameContent">
+            {{name}} {{surname}}
+        </div>
+        <div>
+        </div>
+    </div>
+    <div class="messengerDiv2">
+        <h1>Сообщения</h1>
+        <div class="contentChannel">
+            <div class="channelImg">
+                <img src="/pngwing.com (3).png" alt="">
+            </div>
+            <div class="messageImage">
+                <img src="/{{apartamentOne.realty.firstImage}}" class="img-fluid" />
+                <div class="absoluteImg">
+                    <div class="nameRound1">
+                        <div>
+                            {{apartamentOne.info.user.[0].senderName.[0]}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contentMessages">
+                <div>
+                    <h4>
+                        {{apartamentOne.info.user.[0].senderName}} {{apartamentOne.info.user.[0].senderSurname}}
+                    </h4>
+                </div>
+                <div>
+                    <p>{{apartamentOne.realty.sellButton}} • {{apartamentOne.realty.typeOfProperty}} •
+                        {{apartamentOne.realty.price}} ₽
+                    </p>
+                </div>
+                <div class="messengerGrey">
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+       <form action="" method="post">
+            <div class="correspondence">
+                {{#if userTextEntry}}
+                {{#each userTextEntry.date}}
+                <div class="todayHours">
+                    {{day}}
+                </div>
+                {{#each messages}}
+                {{#if senderName}}
+                <div class="senderContent">
+                    <div class="contentApartamentOne1">
+                        <div class="nameRound4">
+                            <div>
+                                {{senderName.[0]}}
+                            </div>
+                        </div>
+                        <div class="senderMessengerThis">
+                            <div class="senderMessenger1">
+                                <p>
+                                    {{text}}
+                                </p>
+                            </div>
+                            <div class="senderMessenger2">
+                                <p>
+                                    {{hours}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{#if iWritingName}}
+                <div class="recipientContent">
+                    <div class="contentApartamentOne2">
+                        <div class="nameRound5">
+                            <div>
+                                {{iWritingName.[0]}}
+                            </div>
+                        </div>
+                        <div class="recipientMessengerThis">
+                            <div class="recipientMessenger1">
+                                <p>
+                                    {{text}}
+                                </p>
+
+                            </div>
+                            <div class="recipientMessenger2">
+                                <p>
+                                    {{hours}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/if}}
+                {{/each}}
+                {{/each}}
+                {{/if}}
+            </div>
+            <input type="hidden" name="realty[realtyId]" value="{{apartamentOne.realty.realtyId}}">
+            <div class="arrow">
+                <textarea name="messages[text]" placeholder="Написать сообщение" class="writeAMessage"
+                    oninput="autoResize(this)"></textarea>
+                <input type="image" name="submit" src="/kisspng-arrow.png" alt="Отправить" class="submiMessage">
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    function autoResize(element) {
+        element.style.height = "auto";
+        element.style.height = (element.scrollHeight) + "px";
+    }
+</script>
+{{else}}
+no messenger
+{{/if}}

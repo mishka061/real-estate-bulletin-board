@@ -1,0 +1,291 @@
+<div class="announcementPageContent">
+    <input type="hidden" name="{{userId}}">
+    <input type="hidden" name="{{_id}}">
+    <div class="price">
+        <h4>
+            {{apartamentOne.typeOfProperty}} {{#if apartamentOne.numberOfRooms}}
+            {{apartamentOne.numberOfRooms}} - комнатная {{/if}}
+        </h4>
+
+        <h4>Цена: {{apartamentOne.price}}₽</h4>
+    </div>
+    <div class="flexInfoTitle">
+        <p>
+            {{apartamentOne.address}}
+        </p>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            {{#each apartamentOne.images}}
+            <div class="swiper-slide img-fluid">
+                <img src="/{{this}}" class="img-fluid" />
+            </div>
+            {{/each}}
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div class="titleAnnouncement">
+        {{#if apartamentOne.infoApartments.squareApartment}}
+        <div class="flexInfoBlock">
+            {{ apartamentOne.infoApartments.squareApartment}}
+            <p>
+                общая
+            </p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoApartments.Residential}}
+        <div class="flexInfoBlock">
+            {{ apartamentOne.infoApartments.Residential}}
+            <p>
+                жилая
+            </p>
+        </div>
+        {{/if}}
+
+        {{#if apartamentOne.infoApartments.Kitchen}}
+        <div class="flexInfoBlock">
+            {{ apartamentOne.infoApartments.Kitchen}}
+            <p>
+                кухня
+            </p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoApartments.squareApartmentDeal}}
+        <div class="flexInfoBlock">
+            {{ apartamentOne.infoApartments.squareApartmentDeal}}
+            <p>
+                общая
+            </p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoApartments.ResidentialDeal}}
+        <div class="flexInfoBlock">
+            {{ apartamentOne.infoApartments.ResidentialDeal}}
+            <p>
+                жилая
+            </p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoApartments.KitchenDeal}}
+        <div class="flexInfoBlock">
+            {{ apartamentOne.infoApartments.KitchenDeal}}
+            <p>
+                кухня
+            </p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoApartments.ground-floor}}
+        <div class="flexInfoBlock">
+            {{apartamentOne.infoApartments.ground-floor}} этаж
+            <p>
+                из {{apartamentOne.infoApartments.last-floor}}
+            </p>
+
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoHouse.ceilingHeight}}
+        <div class="flexInfoBlock">
+            {{apartamentOne.infoHouse.ceilingHeight}}
+            <p>
+                потолки
+            </p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoHouse.yearConstruction}}
+        <div class="flexInfoBlock">
+            {{apartamentOne.infoHouse.yearConstruction}}
+            <p>
+                год постройки
+            </p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoApartments.plotArea}}
+        <div class="flexInfoBlock">
+            {{apartamentOne.infoApartments.plotArea}}
+            <p>
+                {{apartamentOne.hectare}}
+            </p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoApartments.typeOfPlot}}
+        <div class="flexInfoBlock">
+            {{apartamentOne.infoApartments.typeOfPlot}}
+            <p>
+                участок
+            </p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoApartments.squareHouse}}
+        <div class="flexInfoBlock">
+            {{apartamentOne.infoApartments.squareHouse}}
+            <p>
+                площадь, м²
+            </p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoApartments.numberOfFloors}}
+        <div class="flexInfoBlock">
+            {{apartamentOne.infoApartments.numberOfFloors}}
+            <p>
+                этажей
+            </p>
+        </div>
+        {{/if}}
+    </div>
+    <div class="infoHouseApartamentConteiner">
+        {{#if apartamentOne.infoHouse.typeOfParking}}
+        <div class="imginfoHouseApartament">
+            <img src="/typeOfParking.jpg" alt="">
+            <p>{{apartamentOne.infoHouse.typeOfParking}}</p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoHouse.typeOfHouse}}
+        <div class="imginfoHouseApartament">
+            <img src="/typeOfHouse.png" alt="">
+            <p> {{apartamentOne.infoHouse.typeOfHouse}} </p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoApartments.statusType}}
+        <div class="imginfoHouseApartament">
+            <img src="/planning.png" alt="">
+            <p>{{apartamentOne.infoApartments.statusType}}</p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoApartments.Windows}}
+        <div class="imginfoHouseApartament">
+            <img src="/Windows.png" alt="">
+            <p>{{apartamentOne.infoApartments.Windows}}</p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoApartments.Bathroom}}
+        <div class="imginfoHouseApartament">
+            <img src="/Bathroom.png" alt="">
+            <p>{{apartamentOne.infoApartments.Bathroom}}</p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoApartments.Balcony}}
+        <div class="imginfoHouseApartament">
+            <img src="/Balcony.png" alt="">
+            <p> {{apartamentOne.infoApartments.Balcony}}</p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoApartments.Repair}}
+        <div class="imginfoHouseApartament">
+            <img src="/Repair.png" alt="">
+            <p>{{apartamentOne.infoApartments.Repair}}</p>
+        </div>
+        {{/if}}
+
+        {{#if apartamentOne.infoApartments.Material}}
+        <div class="imginfoHouseApartament">
+            <img src="/typeOfHouse.png" alt="">
+            <p> {{apartamentOne.infoApartments.Material}} </p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.infoApartments.Shower}}
+        <div class="imginfoHouseApartament">
+            <img src="/water-pipess.png" alt="">
+            <p> {{apartamentOne.infoApartments.Shower}} </p>
+        </div>
+        {{/if}}
+    </div>
+    <div class="Layout">
+        <h5>Планировка:</h5>
+        <img src="/{{apartamentOne.imgLabels}}" class="img-fluid" />
+    </div>
+    <div class="textDetailConteiner">
+        <h5>Описание:</h5>
+        <p>{{apartamentOne.textDetail}}</p>
+    </div>
+    <h5>Детали:</h5>
+    <div class="detailContent">
+        {{#if (isArray apartamentOne.amenitiesAndDetails.details)}}
+        {{#each apartamentOne.amenitiesAndDetails.details}}
+        <div class="amenitiesAndDetail">
+            <p>{{this}}</p>
+        </div>
+        {{/each}}
+        {{else}}
+        <div class="amenitiesAndDetail">
+            <p>{{apartamentOne.amenitiesAndDetails.details}}</p>
+        </div>
+        {{/if}}
+    </div>
+    <div class="transactionDetails">
+        {{!-- <h5>Дополнительно: </h5> --}}
+        {{#if apartamentOne.amenitiesAndDetails.Deposit}}
+        <div class="agentCommissions">
+            <h5>
+                Залог:
+            </h5>
+            <p>
+                {{ apartamentOne.amenitiesAndDetails.Deposit}} ₽
+            </p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.amenitiesAndDetails.agentCommission}}
+        <div class="agentCommissions">
+            <h5>
+                Комиссия агента:
+            </h5>
+            <p>
+                {{apartamentOne.amenitiesAndDetails.agentCommission}} ₽
+            </p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.amenitiesAndDetails.transactionType}}
+        <div class="agentCommissions">
+            <h5>
+                {{ apartamentOne.amenitiesAndDetails.transactionType}}
+            </h5>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.amenitiesAndDetails.additionally}}
+        <div class="agentCommissions">
+            <h5>
+                {{ apartamentOne.amenitiesAndDetails.additionally}}
+            </h5>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.amenitiesAndDetails.Bidding}}
+        <div class="agentCommissions">
+            <h5>
+                Торг:
+            </h5>
+            <p>
+                {{apartamentOne.amenitiesAndDetails.Bidding}}
+            </p>
+        </div>
+        {{/if}}
+        {{#if apartamentOne.amenitiesAndDetails.Utility-bills}}
+        <div class="agentCommissions">
+            <h5>
+                Коммунальные платежи:
+            </h5>
+            <p>
+                {{ apartamentOne.amenitiesAndDetails.Utility-bills}}
+            </p>
+        </div>
+        {{/if}}
+    </div>
+    {{#if writeLetter}}
+    <div class="divWriteSeller" style="display: none;">
+        <form action="/apartaments/{{apartamentOne._id}}" method="post">
+            <input type="hidden" name="userId" value="{{apartamentOne.userId}}">
+            <input type="hidden" name="realty[realtyId]" value="{{apartamentOne._id}}">
+            <input type="hidden" name="realty[price]" value="{{apartamentOne.price}}">
+            <input type="hidden" name="realty[typeOfProperty]" value="{{apartamentOne.typeOfProperty}}">
+            <input type="hidden" name="realty[sellButton]" value="{{apartamentOne.sellButton}}">
+            <input type="hidden" name="realty[firstImage]" value="{{apartamentOne.images.[0]}}">
+            <textarea name="messenger" class="messengerTextarea"></textarea>
+            <div class="messengerSubmitBtn">
+                <input type="submit" name="submit" value="Отправить" class="submitSend">
+            </div>
+        </form>
+    </div>
+    <button class="writeToSeller"><a href="">Написать продавцу</a></button>
+    {{/if}}
+</div>
+

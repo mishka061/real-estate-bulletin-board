@@ -1,0 +1,240 @@
+
+.navHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.headerImages img {
+  width: 60px;
+  margin: 10px 10px 0 0;
+}
+.headerImages h2 {
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 35px;
+}
+.headerImages a {
+  text-decoration: none;
+  color: #000;
+}
+.headerImages {
+  display: flex;
+  flex-direction: row;
+}
+.navContent {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+}
+.addBtnHeader a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.registrBtnHeader a,
+.btnExit a {
+  text-decoration: none;
+  color: blue;
+  font-size: 15px;
+}
+.addBtnHeader {
+  background-color: rgb(2, 196, 2);
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 180px;
+  margin-right: 15px;
+}
+.addBtnHeader:hover {
+  background-color: rgb(56, 155, 56);
+}
+.registrBtnHeader{
+  background-color: #92caffa6;
+  border: none;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+.btnExit {
+  background-color: #92caffa6;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.registrBtnHeader:hover,
+.btnExit:hover {
+  background-color: #6ab5fc;
+}
+.personalAccount{
+  width: 40px;
+  height: 40px;
+  background-color: #4d4d4d;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 26px;
+  color: white;
+}
+
+
+.centerContent{
+  background-color: #f7f7f7;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+
+  padding: 20px;
+}
+.personalConteiner{
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 10px;
+}
+.personalConteiner p{
+  margin-left: 10px;
+  padding-top: 10px;
+}
+.personalContent{
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #4d4d4d;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+.personalImg{
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  margin-bottom: 5px;
+}
+.personalImg a{
+   text-decoration: none;
+  margin-left: 20px;
+  color: #000;
+  font-size: 16px;
+}
+.login{
+  font-size: 16px;
+}
+.login:hover,
+.personalImg a:hover{
+  color: red;
+}
+.personalImg img{
+  height: 20px;
+ 
+}
+.personaExit{
+  text-align: end;
+}
+.centerContent{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navHeaderContainer {
+    width: 80%;
+  }
+  .headerImages img {
+    width: 55px;
+  }
+  .headerImages h2 {
+    font-size: 32px;
+  }
+  .addBtnHeader a ,
+  .registrBtnHeader a,
+  .btnExit a {
+    font-size: 14px;
+  }
+  .addBtnHeader {
+    padding: 4px 9px;
+    margin-right: 9px;
+    height: 40px;
+    width: 170px;
+  }
+  .btnExit {
+    padding: 4px 9px;
+  }
+
+}
+
+@media screen and (max-width: 767px)  {
+  .navHeaderContainer {
+    width: 80%;
+    
+  }
+  .headerImages img {
+    width: 35px;
+  }
+  .headerImages h2 {
+    font-size: 22px;
+  }
+  .addBtnHeader a ,
+  .registrBtnHeader a,
+  .btnExit a {
+    font-size: 13px;
+  }
+  .addBtnHeader {
+    padding: 3px 8px;
+    margin-right: 8px;
+    height: 30px;
+  }
+  .registrBtnHeader,
+  .btnExit {
+    padding: 1px 7px;
+  }
+  .personalAccount{
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    }
+  .personalContent{
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+  }
+
+  .addBtnHeader {
+    height: 30px;
+    width: 170px;
+    margin-right: 15px;
+  }
+  .personalImg a{
+   margin-left: 15px;
+   font-size: 14px;
+ }
+ .login{
+   font-size: 14px;
+ }
+ .navContent {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+}
+}
+
+
+
+
+
+
+

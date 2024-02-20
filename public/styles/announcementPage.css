@@ -1,0 +1,206 @@
+.announcementPageContent {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+  margin-top: 80px;
+  padding: 20px;
+}
+.img-fluid {
+  border-radius: 10px;
+}
+.titleAnnouncement {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+  border-bottom: 1px solid gainsboro;
+  margin: 10px 0;
+}
+.flexInfoBlock {
+  margin: 5px;
+}
+h4 {
+  font-size: 26px;
+  font-weight: bold;
+}
+.flexInfoBlock,
+.imginfoHouseApartament p,
+.textDetailConteiner p,
+.transactionDetails p,
+.detailContent p {
+  font-size: 18px;
+}
+.flexInfoTitle p,
+.flexInfoBlock p {
+  color: rgb(172, 169, 169);
+  font-size: 16px;
+}
+
+.imginfoHouseApartament p {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.infoHouseApartamentConteiner {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+  border-bottom: 1px solid gainsboro;
+}
+.imginfoHouseApartament img {
+  width: 40px;
+  height: 40px;
+}
+.imginfoHouseApartament {
+  display: flex;
+  flex-direction: row;
+}
+
+.textDetailConteiner {
+  border-bottom: 1px solid gainsboro;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.transactionDetails p {
+  margin-bottom: 0;
+}
+.detailContent p {
+  margin-bottom: 0;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Layout img {
+  border: 1px solid rgb(214, 214, 214);
+  width: 30%;
+}
+.detailContent {
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, auto));
+}
+.amenitiesAndDetail {
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+  margin: 2px 5px 2px 0;
+  padding: 5px;
+}
+.agentCommissions {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid gainsboro;
+  padding: 10px 0;
+}
+.agentCommissions p {
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .titleAnnouncement {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, auto));
+    margin: 8px 0;
+  }
+  .flexInfoBlock {
+    margin: 5px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+  .flexInfoBlock,
+  h5 {
+    font-size: 19px;
+  }
+  .imginfoHouseApartament p,
+  .textDetailConteiner p,
+  .transactionDetails p,
+  .detailContent p {
+    font-size: 16px;
+  }
+  .flexInfoTitle p,
+  .flexInfoBlock p {
+    font-size: 15px;
+  }
+
+  .announcementPageContent {
+    width: 60%;
+    padding: 15px;
+  }
+
+  .imginfoHouseApartament img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .imginfoHouseApartament p {
+    margin-top: 9px;
+    margin-left: 9px;
+  }
+  .detailContent {
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+  }
+}
+
+@media screen and (max-width: 767px){
+  h4 {
+    font-size: 18px;
+  }
+  .flexInfoBlock,
+  h5 {
+    font-size: 15px;
+  }
+  .imginfoHouseApartament p,
+  .textDetailConteiner p,
+  .transactionDetails p,
+  .detailContent p {
+    font-size: 14px;
+  }
+  .flexInfoTitle p,
+  .flexInfoBlock p {
+    font-size: 12px;
+  }
+  .titleAnnouncement {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(55px, auto));
+    margin: 5px 0;
+  }
+  .flexInfoBlock {
+    margin: 2px;
+  }
+
+  .announcementPageContent {
+    width: 70%;
+  }
+
+  .imginfoHouseApartament img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .imginfoHouseApartament p {
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+  .infoHouseApartamentConteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+  }
+  .detailContent {
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, auto));
+  }
+}
